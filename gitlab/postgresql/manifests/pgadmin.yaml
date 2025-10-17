@@ -4,9 +4,9 @@ apiVersion: v1
 metadata:
   name: pgadmin-pvc
   annotations:
-    volume.beta.kubernetes.io/storage-class: "managed-nfs-storage"
+    volume.beta.kubernetes.io/storage-class: "yc-network-hdd"
 spec:
-  storageClassName: "managed-nfs-storage"
+  storageClassName: "yc-network-hdd"
   accessModes:
     - ReadWriteMany
   resources:
